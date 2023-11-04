@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import StickyNavbar from "./components/StickyNavbar";
 import { cn } from "@/lib/utils";
 import { fontSans } from "@/components/font";
+import { NavigationMenuDemo } from "./components/NavigationMenu";
 
 export const metadata: Metadata = {
   title: "KazooTTT BLOG",
@@ -22,7 +22,7 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <StickyNavbar></StickyNavbar>
+        <NavigationMenuDemo></NavigationMenuDemo>
         {children}
       </body>
     </html>
