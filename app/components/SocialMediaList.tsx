@@ -12,19 +12,23 @@ const SocialMediaItem = ({
   switch (platform) {
     case "github":
       return (
-        <Link href={`https://github/${value}`} key={platform}>
+        <Link
+          href={`https://github.com/${value}`}
+          key={platform}
+          target="_blank"
+        >
           <Icons.gitHub className="h-4 w-4" />
         </Link>
       );
     case "bilibili":
       return (
-        <Link href={value} key={platform}>
+        <Link href={value} key={platform} target="_blank">
           <Icons.bilibili className="h-4 w-4" />
         </Link>
       );
     case "weibo":
       return (
-        <Link href={value} key={platform}>
+        <Link href={value} key={platform} target="_blank">
           <Icons.weibo className="h-4 w-4" />
         </Link>
       );
