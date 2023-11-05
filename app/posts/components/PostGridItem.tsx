@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { TagLink } from "./TagLink";
 
 export const PostGridItem = ({ post }: { post: PostItem }) => {
   return (
@@ -28,13 +29,7 @@ export const PostGridItem = ({ post }: { post: PostItem }) => {
           </p>
           <div className="tags">
             {post.tags.map((tag) => {
-              return (
-                <Link href={`/tags/${tag}`} key={tag}>
-                  <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-                    {tag}
-                  </span>
-                </Link>
-              );
+              return <TagLink key={tag} tag={tag}></TagLink>;
             })}
           </div>
         </div>

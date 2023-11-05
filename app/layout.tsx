@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn("bg-background font-sans antialiased", fontSans.variable)}
+        suppressHydrationWarning={true}
       >
         <NavigationMenuDemo></NavigationMenuDemo>
         {children}

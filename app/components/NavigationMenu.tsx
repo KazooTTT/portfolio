@@ -45,7 +45,7 @@ const components: MenuItem[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <div className="top-0 left-0 fixed w-full flex justify-center bg-background shadow">
+    <div className="top-0 left-0 fixed w-full flex justify-center bg-background shadow z-50">
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
