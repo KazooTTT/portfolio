@@ -6,7 +6,7 @@ import { PicturesWall } from "./components/PicturesWall";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="w-full h-full grid grid-cols-4 gap-3">
+      <div className="h-full grid grid-cols-4 gap-3 w-full lg:w-2/3">
         <IntroCard></IntroCard>
         <GithubCard></GithubCard>
         <PicturesWall></PicturesWall>
