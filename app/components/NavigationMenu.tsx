@@ -57,8 +57,8 @@ export function NavigationMenuDemo() {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuTrigger>
-              <Link href="/archive" legacyBehavior passHref>
-                归档
+              <Link href="/posts" legacyBehavior passHref>
+                文稿
               </Link>
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -67,7 +67,7 @@ export function NavigationMenuDemo() {
                   <ListItem
                     key={component.title}
                     title={component.title}
-                    href={component.href}
+                    href={`/posts/${component.href}`}
                   >
                     {component.description}
                   </ListItem>
